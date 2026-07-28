@@ -1,0 +1,20 @@
+ASM990 2.4.5     TEST                       Tue Jul 28 14:11:07 2026 Page 0001
+
+
+              1         IDT  'TEST'
+              2         DEF  START
+0000 0201     3  START  LI   R1,>1234
+0002 1234 
+0004 04C2     4         CLR  R2
+0006 0582     5         INC  R2
+0008 0340     6         IDLE
+     0000'    7         END  START
+ASM990 2.4.5     TEST                       Tue Jul 28 14:11:07 2026 Page 0002
+
+
+R0       0000   R1       0001   R10      000A   R11      000B   R12      000C   
+R13      000D   R14      000E   R15      000F   R2       0002   R3       0003   
+R4       0004   R5       0005   R6       0006   R7       0007   R8       0008   
+R9       0009   START    0000D  
+
+0 Errors in assembly
