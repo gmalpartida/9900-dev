@@ -1,6 +1,7 @@
 AS=/opt/ti990/bin/asm990
 LD=/opt/ti990/bin/lnk990
 HEXDUMP=hexdump
+VI=vi
 
 include sources.mk
 
@@ -31,6 +32,9 @@ build: $(OBJS)
 
 dump: link
 	$(HEXDUMP) $(HEXDUMP_FLAGS) $(BIN_DIR)/g99.bin
+
+edit:
+	$(VI) $(SRC_DIR)/$(TARGET).asm
 
 clean:
 	rm -rf $(BIN_DIR)/*
